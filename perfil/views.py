@@ -1,19 +1,24 @@
 from django.shortcuts import render
 from django.views.generic import ListView
 from django.views import View
+from django.http import HttpResponse
 
 
 class Criar(View):
-    pass
+    def get(self, *args, **kwargs):
+        return HttpResponse('Criar perfil')
 
 
 class Atualizar(View):
-    pass
+    def get(self, *args, **kwargs):
+        return HttpResponse('Atualizar perfil')
 
 
 class Login(View):
-    pass
+    def get(self, *args, **kwargs):
+        return HttpResponse('Login')
 
 
 class Logout(View):
-    pass
+    def get(self, *args, **kwargs):
+        return HttpResponse('Logout')
